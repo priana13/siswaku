@@ -12,5 +12,26 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.homepage');
 });
+
+Route::get('about', function () {
+    return view('pages.about');
+});
+
+
+Route::get('siswa', function(){
+    $siswa = ['Priana','Heri','Saputra'];
+
+    return view('siswa.index')->with('siswa',$siswa);
+    // return view('siswa.index',compact('siswa'));
+});
+
+
+// Route::get('halaman-rahasia', ['as'=>'secret', function () {
+//     return "ini adalah halaman rahasia";
+// }]);
+
+// Route::get('rahasia', function () {
+//     return redirect()->route('secret');
+// });
