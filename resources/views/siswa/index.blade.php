@@ -4,6 +4,7 @@
 
 <div id="siswa">
     <h2>   Siswa</h2>
+    <hr>
     <?php  if (!empty($siswa)):?>
         <ul>
             <?php foreach ($siswa as $anak): ?>
