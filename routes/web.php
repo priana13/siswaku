@@ -24,7 +24,7 @@ Route::get('siswa', function(){
     $siswa = ['Priana','Heri','Saputra'];
 
     //return view('siswa.index')->with('siswa',$siswa);
-    return view('siswa.daftar_siswa',compact('siswa'));
+    return view('siswa.index',compact('siswa'));
 });
 
 
